@@ -8,6 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+
+        li {padding-bottom: 1em;  /* Añade 1em de margen inferior a cada li*/}
+
         /* Base styles */
         body {
             font-family: 'Inter', sans-serif;
@@ -183,7 +186,7 @@
         <!-- Encabezado / Navbar -->
         <header class="flex flex-col sm:flex-row justify-between items-center py-6 px-4 mb-8 bg-white rounded-xl shadow-md transition-colors duration-300">
             <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-0">
-                <span class="text-indigo-600" data-lang-key="portfolio_of_prefix">Portafolio</span> de <span data-lang-key="your_name">Milver Camilo Rojas</span>
+                <span class="text-indigo-600" data-lang-key="portfolio_of_prefix">Portafolio
             </h1>
             <div class="flex items-center space-x-4 mt-4 sm:mt-0">
                 <!-- Selector de Idioma -->
@@ -225,15 +228,15 @@
                     <h3 class="text-2xl font-semibold mb-2" data-lang-key="your_name_full">Milver Camilo Rojas Riaño</h3>
                     <p class="text-lg text-gray-600 mb-4" data-lang-key="backend_ai_dev">Programador Backend de IA, en Python</p>
                     <p class="text-gray-7z00 leading-relaxed" data-lang-key="about_me_desc1">
-                        Aquí va una breve descripción "Sobre mí". Destaca tu habilidad principal, tu enfoque como desarrollador backend de IA y lo que te apasiona en este campo. Sé conciso y sincero. Este texto debe reflejar tu conocimiento y experiencia de manera directa.
+                        Soy un recien egresado de la facultad de ingenieria en la universidad de ibague, alli me gradue como ingeniero electronico y aprendi sobre programacion en ensamblador, matlab , python y raspberry , ademas como optativas tome desarrollo de aplicaciones moviles, machine learning ,procesamiento de imagenes y redes e internet en donde aprendí sobre android studio, manejo de bases de datos y creacion de redes neuronales, Java, cisco packet tracer y html.
                     </p>
                     <p class="mt-4 text-gray-700" data-lang-key="about_me_desc2">
                         ¡Estoy aprendiendo constantemente y siempre en busca de nuevos desafíos para aplicar y expandir mis conocimientos en el desarrollo de sistemas inteligentes!
                     </p>
                     <div class="mt-6 flex flex-wrap gap-4">
-                        <a href="mailto:tu.email@ejemplo.com" class="btn-primary flex items-center space-x-2">
+                        <a href="mailto:milvercami@gmail.com" class="btn-primary flex items-center space-x-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 13h9a2 2 0 002-2V7a2 2 0 00-2-2H3a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                            <span>tu.email@ejemplo.com</span>
+                            <span>milvercami@gmail.com</span>
                         </a>
                         <!-- CV link updated to point to the 'cvs' subdirectory -->
                         <a id="cv-link" href="cvs/cv_esp.pdf" target="_blank" class="btn-primary flex items-center space-x-2">
@@ -278,22 +281,35 @@
             <h2 class="section-title" data-lang-key="technical_skills">Habilidades Técnicas</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                 <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Python</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Java</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Html</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">JavaScript</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">TypeScript</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">React.js</span>
                 <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Machine Learning</span>
-                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Deep Learning</span>
-                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">SQL/NoSQL Databases</span>
-                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">API Development (RESTful)</span>
-                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Docker/Kubernetes</span>
-                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Cloud Platforms (AWS, GCP, Azure)</span>
-                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Git/Version Control</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Pandas/Nunpy</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">SQL Databases</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">API Development</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Matlab</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Azure</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Git - Version Control</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Langchain</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Ensambler</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Raspberry</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Android Studio</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">TensorFlow/Sklearn</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">PHP</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">PyTorch</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Arduino</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium text-center">Bizagi Modeler</span>
                 <!-- Añade más habilidades relevantes -->
             </div>
         </section>
 
-        <!-- Sección Experiencia Laboral (Obligatorio si aplica) -->
-        <section id="experience" class="card">
-            <h2 class="section-title" data-lang-key="work_experience">Experiencia Laboral</h2>
-            <div class="space-y-6">
-                <!-- Puesto 1 -->
+        
+        <!-- Inicio Sección Experiencia Laboral (Obligatorio si aplica) -->
+    
+        <!--
                 <div>
                     <h3 class="text-xl font-semibold" data-lang-key="your_position">[Tu Puesto] en [Nombre de la Empresa]</h3>
                     <p class="text-gray-600">[Fechas: Mes Año - Mes Año]</p>
@@ -303,16 +319,12 @@
                         <li data-lang-key="achievement">Logro importante: Reduje el tiempo de procesamiento en X%.</li>
                     </ul>
                 </div>
-                <!-- Puesto 2 (si aplica) -->
-                <!-- <div>
-                    <h3 class="text-xl font-semibold" data-lang-key="another_position">[Otro Puesto] en [Otra Empresa]</h3>
-                    <p class="text-gray-600">[Fechas: Mes Año - Mes Año]</p>
-                    <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
-                        <li data-lang-key="responsibility_desc">Descripción de responsabilidades y logros.</li>
-                    </ul>
-                </div> -->
             </div>
-        </section>
+        </section> 
+        -->
+
+        <!-- Final Sección Experiencia Laboral (Obligatorio si aplica) -->
+
 
         <!-- Sección Formación Reglada (o no) (Obligatorio) -->
         <section id="education" class="card">
@@ -320,43 +332,26 @@
             <div class="space-y-6">
                 <!-- Título Universitario/Grado -->
                 <div>
-                    <h3 class="text-xl font-semibold" data-lang-key="your_degree">[Tu Título/Grado] - [Nombre de la Universidad/Institución]</h3>
-                    <p class="text-gray-600">[Fechas: Año de Inicio - Año de Fin]</p>
-                    <p class="text-gray-700" data-lang-key="education_desc">Menciona el enfoque de tu carrera si es relevante para la IA o el desarrollo backend.</p>
+                    <h3 class="text-xl font-semibold" data-lang-key="your_degree">Ingeniero Electronico - Universidad de ibague</h3>
+                    <p class="text-gray-600">2025A - 28/03/25</p>
+                    <p class="text-gray-700" data-lang-key="education_desc">El enfoque de mi carrera fue desarrollo tecnologico</p>
                 </div>
                 <!-- Bootcamps/Cursos/Autodidacta -->
                 <div>
-                    <h3 class="text-xl font-semibold" data-lang-key="certificate_course">Certificado/Curso: [Nombre del Curso/Bootcamp]</h3>
-                    <p class="text-gray-600">[Institución/Plataforma, Año]</p>
-                    <p class="text-gray-700" data-lang-key="autodidact_desc">Si eres autodidacta, menciona los recursos o proyectos que te ayudaron a adquirir conocimientos.</p>
+                    <h3 class="text-xl font-semibold" data-lang-key="certificate_course">Certificado en la ruta AI Dev</h3>
+                    <p class="text-gray-600">Platzi, 2025</p>
+                    <p class="text-gray-700" data-lang-key="autodidact_desc"></p>
                 </div>
             </div>
         </section>
 
         <!-- Sección Recomendable (Enlaces, Habilidades Blandas, Roles, Dominio) -->
         <section id="recommended" class="card">
-            <h2 class="section-title" data-lang-key="recommended_info">Información Recomendable</h2>
+            <h2 class="section-title" data-lang-key="recommended_info">Habilidades Blandas</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
                 <div>
-                    <h3 class="text-xl font-semibold mb-3" data-lang-key="links_other_projects">Enlaces y Otros Proyectos</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>
-                            <a href="https://github.com/tu_usuario" target="_blank" class="flex items-center space-x-2 text-link hover:underline">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017 2 16.216 4.606 19.827 8.358 21.188.878.077 1.25-.333 1.25-.733V8.87c0-.28-.1-.47-.45-.55C8.42 8.1 7.29 7.55 7 6.84c-.03-.09-.12-.25-.45-.08C6.15 6.74 6 7.42 6 7.42c-.33 1.13.1 1.76 1 2.22.1.06.27.12.33.07-.07-.27-.2-.48-.35-.6C6.73 8.71 5.3 7.59 5.3 5.48c0-.75.26-1.39.73-1.93-.06-.15-.22-.76.07-1.78 0 0 .6-.19 2-.07.5-.16 1.05-.24 1.55-.27.5-.03 1.05-.03 1.55 0 1.45.12 2-.07 2-.07.29 1.02.13 1.63.07 1.78.47.54.73 1.18.73 1.93 0 2.11-1.43 3.23-2.67 3.56-.2.18-.35.42-.4.65V18.5c0 .4-.37.8-.88.73-3.75-1.36-6.357-4.97-6.357-9.168C2 6.484 6.477 2 12 2z" clip-rule="evenodd"/></svg>
-                                <span>GitHub</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/in/tu_perfil" target="_blank" class="flex items-center space-x-2 text-link hover:underline">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.367-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                                <span>LinkedIn</span>
-                            </a>
-                        </li>
-                        <!-- Puedes añadir enlaces a otros proyectos, un blog, etc. -->
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-3" data-lang-key="soft_skills">Habilidades Blandas</h3>
+                    
                     <ul class="list-disc list-inside text-gray-700 space-y-1">
                         <li data-lang-key="effective_comm">Comunicación efectiva</li>
                         <li data-lang-key="problem_solving">Resolución de problemas</li>
@@ -366,53 +361,17 @@
                     </ul>
                 </div>
             </div>
-            <div class="mt-8">
-                <h3 class="text-xl font-semibold mb-3" data-lang-key="custom_domain_title">Dominio Personalizado</h3>
-                <p class="text-gray-700" data-lang-key="custom_domain_desc">
-                    Considera adquirir un dominio propio para tu portafolio (<code class="bg-gray-100 p-1 rounded">tudominio.com</code>) para una imagen más profesional.
-                </p>
-            </div>
-            <div class="mt-8">
-                <h3 class="text-xl font-semibold mb-3" data-lang-key="roles_played_title">Roles Desempeñados</h3>
-                <p class="text-gray-700" data-lang-key="roles_played_desc">
-                    Detalla los roles específicos que has tenido en tus proyectos o experiencia laboral, por ejemplo: "Diseñador de Arquitectura de Modelos", "Ingeniero de MLOps", "Desarrollador de APIs para IA".
-                </p>
-            </div>
         </section>
 
         <!-- Sección Opcional (Dark/Light Mode, Idiomas, Aficiones, Blog, etc.) -->
         <section id="optional" class="card">
-            <h2 class="section-title" data-lang-key="optional_info">Información Opcional</h2>
+            <h2 class="section-title" data-lang-key="optional_info">Reconocimientos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                    <h3 class="text-xl font-semibold mb-3" data-lang-key="interface_prefs_languages">Preferencias de Interfaz / Idiomas</h3>
-                    <p class="text-gray-700 mb-2" data-lang-key="dark_light_mode_desc">
-                        Puedes implementar un interruptor para modo oscuro/claro si deseas.
-                    </p>
-                    <p class="text-gray-700" data-lang-key="other_languages_desc">
-                        Menciona otros idiomas que domines, si es relevante para tus objetivos laborales.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-3" data-lang-key="hobbies_blog_outreach">Aficiones / Blog / Divulgación</h3>
                     <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li data-lang-key="hobbies_desc">Menciona aficiones que muestren habilidades transferibles (ej. ajedrez - pensamiento estratégico).</li>
-                        <li data-lang-key="blog_articles_desc">Si tienes un blog o escribes artículos sobre IA, enlaza aquí.</li>
-                        <li data-lang-key="events_desc">Participación en charlas, conferencias o eventos de divulgación.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-3" data-lang-key="contributions_awards">Contribuciones y Reconocimientos</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li data-lang-key="open_source_contributions">Contribuciones a proyectos de código abierto.</li>
-                        <li data-lang-key="awards_recognition">Reconocimientos o premios obtenidos.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-3" data-lang-key="certifications_reviews">Certificaciones y Reseñas</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li data-lang-key="relevant_certs">Certificaciones relevantes (ej. AWS Certified Machine Learning Specialty).</li>
-                        <li data-lang-key="testimonials">Testimonios o reseñas de colegas/supervisores (pregunta permiso antes).</li>
+                        <li data-lang-key="awards_recognition_1">Recibí el segundo lugar en la competición: Muestra estudiantil de trabajos de Ingeniería Electrónica (METIE) edición 2022, orientada al desarrollo tecnológico.</li>
+                        
+                        <li data-lang-key="awards_recognition">Recibí el segundo lugar en la competición: Feria de emprendimiento en la categoría de idea de negocio en su edición 2022A, orientada al desarrollo empresarial.</li>
                     </ul>
                 </div>
             </div>
@@ -423,14 +382,18 @@
             <h2 class="section-title mx-auto" data-lang-key="contact">Contacto</h2>
             <p class="text-gray-700 mb-4" data-lang-key="contact_me">¡Me encantaría conectar y discutir oportunidades!</p>
             <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
-                <a href="mailto:tu.email@ejemplo.com" class="text-link hover:underline flex items-center space-x-2">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 13h9a2 2 0 002-2V7a2 2 0 00-2-2H3a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                    <span>tu.email@ejemplo.com</span>
+                <a href="mailto:milvercami@gmail.com" class="text-link hover:underline flex items-center space-x-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="milvercami@gmail.com"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 13h9a2 2 0 002-2V7a2 2 0 00-2-2H3a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <span>Mail</span>
                 </a>
-                <a href="https://linkedin.com/in/tu_perfil" target="_blank" class="text-link hover:underline flex items-center space-x-2">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.367-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    <span>LinkedIn.com/in/tuperfil</span>
+                <a href="www.linkedin.com/in/milver-camilo-rojas-riaño-43aa14364" target="_blank" class="text-link hover:underline flex items-center space-x-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="www.linkedin.com/in/milver-camilo-rojas-riaño-43aa14364"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.367-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <span>Linkedin</span>
                 </a>
+                <a href="https://github.com/mcl123o3" target="_blank" class="flex items-center space-x-2 text-link hover:underline">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="https://github.com/mcl123o3"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017 2 16.216 4.606 19.827 8.358 21.188.878.077 1.25-.333 1.25-.733V8.87c0-.28-.1-.47-.45-.55C8.42 8.1 7.29 7.55 7 6.84c-.03-.09-.12-.25-.45-.08C6.15 6.74 6 7.42 6 7.42c-.33 1.13.1 1.76 1 2.22.1.06.27.12.33.07-.07-.27-.2-.48-.35-.6C6.73 8.71 5.3 7.59 5.3 5.48c0-.75.26-1.39.73-1.93-.06-.15-.22-.76.07-1.78 0 0 .6-.19 2-.07.5-.16 1.05-.24 1.55-.27.5-.03 1.05-.03 1.55 0 1.45.12 2-.07 2-.07.29 1.02.13 1.63.07 1.78.47.54.73 1.18.73 1.93 0 2.11-1.43 3.23-2.67 3.56-.2.18-.35.42-.4.65V18.5c0 .4-.37.8-.88.73-3.75-1.36-6.357-4.97-6.357-9.168C2 6.484 6.477 2 12 2z" clip-rule="evenodd"/></svg>
+                    <span>GitHub</span>
+                    </a>
             </div>
             <p class="mt-8 text-gray-500 text-sm">&copy; <span id="current-year"></span> <span data-lang-key="your_name_footer">Milver Camilo Rojas</span>. <span data-lang-key="all_rights_reserved">Todos los derechos reservados.</span></p>
         </footer>
@@ -478,7 +441,7 @@
                 'contact': 'Contacto',
                 'your_name_full': 'Milver Camilo Rojas Riaño',
                 'backend_ai_dev': 'Programador Backend de IA, en Python',
-                'about_me_desc1': 'Aquí va una breve descripción "Sobre mí". Destaca tu habilidad principal, tu enfoque como desarrollador backend de IA y lo que te apasiona en este campo. Sé conciso y sincero. Este texto debe reflejar tu conocimiento y experiencia de manera directa.',
+                'about_me_desc1': 'Soy un recien egresado de la facultad de ingenieria en la universidad de ibague, alli me gradue como ingeniero electronico y aprendi sobre programacion en ensamblador, matlab , python y raspberry , ademas como optativas tome desarrollo de aplicaciones moviles, machine learning ,procesamiento de imagenes y redes e internet en donde aprendí sobre android studio, manejo de bases de datos y creacion de redes neuronales, Java, cisco packet tracer y html.',
                 'about_me_desc2': '¡Estoy aprendiendo constantemente y siempre en busca de nuevos desafíos para aplicar y expandir mis conocimientos en el desarrollo de sistemas inteligentes!',
                 'download_cv': 'Descargar CV (PDF)',
                 'main_projects': 'Proyectos Principales',
@@ -497,11 +460,11 @@
                 'responsibility_2': 'Responsabilidad clave 2: Implementé APIs para la integración de [sistema].',
                 'achievement': 'Logro importante: Reduje el tiempo de procesamiento en X%.',
                 'education': 'Formación',
-                'your_degree': '[Tu Título/Grado] - [Nombre de la Universidad/Institución]',
-                'education_desc': 'Menciona el enfoque de tu carrera si es relevante para la IA o el desarrollo backend.',
-                'certificate_course': 'Certificado/Curso: [Nombre del Curso/Bootcamp]',
-                'autodidact_desc': 'Si eres autodidacta, menciona los recursos o proyectos que te ayudaron a adquirir conocimientos.',
-                'recommended_info': 'Información Recomendable',
+                'your_degree': 'Ingeniero Electronico - Universidad de ibague',
+                'education_desc': 'El enfoque de mi carrera fue desarrollo tecnologico',
+                'certificate_course': 'Certificado en la ruta AI Dev',
+                'autodidact_desc': '',
+                'recommended_info': 'Habilidades Blandas',
                 'links_other_projects': 'Enlaces y Otros Proyectos',
                 'soft_skills': 'Habilidades Blandas',
                 'effective_comm': 'Comunicación efectiva',
@@ -513,7 +476,7 @@
                 'custom_domain_desc': 'Considera adquirir un dominio propio para tu portafolio (<code class="bg-gray-100 p-1 rounded">tudominio.com</code>) para una imagen más profesional.',
                 'roles_played_title': 'Roles Desempeñados',
                 'roles_played_desc': 'Detalla los roles específicos que has tenido en tus proyectos o experiencia laboral, por ejemplo: "Diseñador de Arquitectura de Modelos", "Ingeniero de MLOps", "Desarrollador de APIs para IA".',
-                'optional_info': 'Información Opcional',
+                'optional_info': 'Reconocimientos',
                 'interface_prefs_languages': 'Preferencias de Interfaz / Idiomas',
                 'dark_light_mode_desc': 'Puedes implementar un interruptor para modo oscuro/claro si deseas.',
                 'other_languages_desc': 'Menciona otros idiomas que domines, si es relevante para tus objetivos laborales.',
@@ -522,8 +485,8 @@
                 'blog_articles_desc': 'Si tienes un blog o escribes artículos sobre IA, enlaza aquí.',
                 'events_desc': 'Participación en charlas, conferencias o eventos de divulgación.',
                 'contributions_awards': 'Contribuciones y Reconocimientos',
-                'open_source_contributions': 'Contribuciones a proyectos de código abierto.',
-                'awards_recognition': 'Reconocimientos o premios obtenidos.',
+                'open_source_contributions': 'Recibí el segundo lugar en la competición: Muestra estudiantil de trabajos de Ingeniería Electrónica (METIE) edición 2022, orientada al desarrollo tecnológico.',
+                'awards_recognition': 'Recibí el segundo lugar en la competición: Feria de emprendimiento en la categoría de idea de negocio en su edición 2022A, orientada al desarrollo empresarial.',
                 'certifications_reviews': 'Certificaciones y Reseñas',
                 'relevant_certs': 'Certificaciones relevantes (ej. AWS Certified Machine Learning Specialty).',
                 'testimonials': 'Testimonios o reseñas de colegas/supervisores (pregunta permiso antes).',
@@ -540,8 +503,8 @@
                 'skills': 'Skills',
                 'contact': 'Contact',
                 'your_name_full': 'Milver Camilo Rojas Riaño',
-                'backend_ai_dev': 'AI Backend Developer, [Your Main Skill]',
-                'about_me_desc1': 'Here\'s a brief "About me" description. Highlight your main skill, your focus as an AI backend developer, and what you\'re passionate about in this field. Be concise and sincere. This text should directly reflect your knowledge and experience.',
+                'backend_ai_dev': 'AI Backend Developer, in Python',
+                'about_me_desc1': 'I am a recent graduate of the faculty of engineering at the university of ibague, there I graduated as an electrical engineer and learned about programming in assembler, matlab, python and raspberry, also as electives take mobile application development, machine learning, image processing and networking and internet where I learned about android studio, database management and creation of neural networks, Java, cisco packet tracer and html..',
                 'about_me_desc2': 'I\'m constantly learning and always looking for new challenges to apply and expand my knowledge in the development of intelligent systems!',
                 'download_cv': 'Download CV (PDF)',
                 'main_projects': 'Main Projects',
@@ -560,10 +523,10 @@
                 'responsibility_2': 'Key responsibility 2: Implemented APIs for [system] integration.',
                 'achievement': 'Important achievement: Reduced processing time by X%.',
                 'education': 'Education',
-                'your_degree': '[Your Degree/Title] - [University/Institution Name]',
-                'education_desc': 'Mention the focus of your degree if relevant to AI or backend development.',
-                'certificate_course': 'Certificate/Course: [Course/Bootcamp Name]',
-                'autodidact_desc': 'If you are self-taught, mention the resources or projects that helped you acquire knowledge.',
+                'your_degree': 'Electronic engineer - University of Ibague',
+                'education_desc': 'My career focus was technology development.',
+                'certificate_course': 'Certified on the AI Dev route',
+                'autodidact_desc': '',
                 'recommended_info': 'Recommended Information',
                 'links_other_projects': 'Links and Other Projects',
                 'soft_skills': 'Soft Skills',
@@ -585,8 +548,8 @@
                 'blog_articles_desc': 'If you have a blog or write articles about AI, link here.',
                 'events_desc': 'Participation in talks, conferences, or outreach events.',
                 'contributions_awards': 'Contributions and Recognition',
-                'open_source_contributions': 'Open Source Contributions.',
-                'awards_recognition': 'Awards or recognition obtained.',
+                'awards_recognition_1': 'I received second place in the competition: Electronic Engineering Student Paper Exhibition (METIE) 2022 edition, oriented to technological development.',
+                'awards_recognition': 'I received the second place in the competition: Entrepreneurship Fair in the category of business idea in its 2022A edition, oriented to business development.',
                 'certifications_reviews': 'Certifications and Reviews',
                 'relevant_certs': 'Relevant certifications (e.g., AWS Certified Machine Learning Specialty).',
                 'testimonials': 'Testimonials or reviews from colleagues/supervisors (ask permission first).',
