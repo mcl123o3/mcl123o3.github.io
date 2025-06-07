@@ -1,10 +1,9 @@
-li {padding-bottom: 1em;  /* Añade 1em de margen inferior a cada li*/}
+li {padding-bottom: 1em;}
 
-        /* Base styles */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; /* Light background */
-            color: #333; /* Dark text */
+            background-color: #f3f4f6;
+            color: #333;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
         .container {
@@ -14,9 +13,9 @@ li {padding-bottom: 1em;  /* Añade 1em de margen inferior a cada li*/}
             position: relative;
             display: inline-block;
             margin-bottom: 1.5rem;
-            font-size: 2.25rem; /* text-4xl */
-            font-weight: 700; /* font-bold */
-            color: #1a202c; /* text-gray-900 */
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #1a202c;
             transition: color 0.3s ease;
         }
         .section-title::after {
@@ -26,39 +25,40 @@ li {padding-bottom: 1em;  /* Añade 1em de margen inferior a cada li*/}
             bottom: -8px;
             width: 60%;
             height: 4px;
-            background-color: #4f46e5; /* Indigo line */
+            background-color: #4f46e5;
             border-radius: 2px;
             transition: background-color 0.3s ease;
         }
         .card {
             background-color: #ffffff;
-            border-radius: 0.75rem; /* rounded-xl */
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             padding: 2rem;
             margin-bottom: 1.5rem;
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
         }
         .btn-primary {
-            background-color: #4f46e5; /* indigo-600 */
+            background-color: #4f46e5;
             color: #ffffff;
             padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem; /* rounded-lg */
+            border-radius: 0.5rem;
             transition: background-color 0.3s ease;
         }
         .btn-primary:hover {
-            background-color: #4338ca; /* indigo-700 */
+            background-color: #4338ca;
         }
         .text-link {
-            color: #4f46e5; /* indigo-600 */
+            color: #4f46e5;
             transition: color 0.3s ease;
         }
         .text-link:hover {
-            color: #4338ca; /* indigo-700 */
+            color: #4338ca;
         }
         .lang-button {
             padding: 0.5rem 1rem;
             border-radius: 0.5rem;
-            background-color: #e0e7ff; /* light indigo */
+            background-color: #e0e7ff;
             color: #4f46e5;
             font-weight: 500;
             cursor: pointer;
@@ -69,10 +69,10 @@ li {padding-bottom: 1em;  /* Añade 1em de margen inferior a cada li*/}
             color: #ffffff;
         }
         .theme-toggle {
-            background-color: #e0e7ff; /* light indigo */
+            background-color: #e0e7ff;
             color: #4f46e5;
             padding: 0.5rem 1rem;
-            border-radius: 9999px; /* full rounded */
+            border-radius: 9999px;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -81,31 +81,29 @@ li {padding-bottom: 1em;  /* Añade 1em de margen inferior a cada li*/}
             box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
         }
         .theme-toggle:hover {
-            background-color: #c7d2fe; /* darker light indigo */
+            background-color: #c7d2fe;
         }
         .theme-toggle svg {
             width: 1.25rem;
             height: 1.25rem;
         }
 
-        /* Dark Mode styles */
         html.dark body {
-            background-color: #1a202c; /* Dark background */
-            color: #e2e8f0; /* Light text */
+            background-color: #1a202c;
+            color: #e2e8f0;
         }
         html.dark .section-title {
-            color: #f7fafc; /* Lighter text for titles */
+            color: #f7fafc;
         }
         html.dark .section-title::after {
-            background-color: #a78bfa; /* Lighter indigo for line */
+            background-color: #a78bfa;
         }
         html.dark .card {
-            background-color: #2d3748; /* Darker card background */
+            background-color: #2d3748;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.12);
         }
-        /* NEW: Header background in dark mode */
         html.dark header {
-            background-color: #2d3748; /* Make header background dark in dark mode */
+            background-color: #2d3748;
         }
         html.dark .text-gray-900 {
             color: #f7fafc;
@@ -120,29 +118,29 @@ li {padding-bottom: 1em;  /* Añade 1em de margen inferior a cada li*/}
             color: #718096;
         }
         html.dark .bg-gray-50 {
-            background-color: #4a5568; /* Darker background for project cards */
+            background-color: #4a5568;
         }
         html.dark .bg-gray-200 {
-            background-color: #4a5568; /* Darker background for photo placeholder */
+            background-color: #4a5568;
         }
         html.dark .btn-primary {
-            background-color: #a78bfa; /* Lighter indigo for buttons */
+            background-color: #a78bfa;
             color: #1a202c;
         }
         html.dark .btn-primary:hover {
-            background-color: #8b5cf6; /* Even lighter indigo */
+            background-color: #8b5cf6;
         }
         html.dark .text-indigo-600 {
-            color: #a78bfa; /* Lighter indigo for links/highlights */
+            color: #a78bfa;
         }
         html.dark .hover:text-indigo-600:hover {
-            color: #8b5cf6; /* Even lighter indigo on hover */
+            color: #8b5cf6;
         }
         html.dark .bg-indigo-100 {
-            background-color: #6d28d9; /* Darker background for skill tags */
+            background-color: #6d28d9;
         }
         html.dark .text-indigo-800 {
-            color: #ede9fe; /* Lighter text for skill tags */
+            color: #ede9fe;
         }
         html.dark .lang-button {
             background-color: #4a5568;
@@ -160,11 +158,33 @@ li {padding-bottom: 1em;  /* Añade 1em de margen inferior a cada li*/}
             background-color: #2d3748;
         }
 
-        /* Specific styles for header title in dark mode */
         html.dark header h1 {
-            color: #ffffff; /* Make the main title (the "de Milver Camilo Rojas" part) pure white */
+            color: #ffffff;
         }
 
         html.dark header h1 .text-indigo-600 {
-            color: #c4b5fd; /* A slightly brighter purple for 'Portafolio' to stand out */
+            color: #c4b5fd;
+        }
+        
+        html.is-landscape .section-title {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        html.is-landscape .section-title::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        html.is-landscape .card {
+            text-align: center;
+        }
+
+        html.is-landscape .card .list-disc {
+            display: block;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
         }
