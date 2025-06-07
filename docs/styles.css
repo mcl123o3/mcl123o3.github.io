@@ -1,0 +1,170 @@
+li {padding-bottom: 1em;  /* Añade 1em de margen inferior a cada li*/}
+
+        /* Base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light background */
+            color: #333; /* Dark text */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            color: #1a202c; /* text-gray-900 */
+            transition: color 0.3s ease;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 60%;
+            height: 4px;
+            background-color: #4f46e5; /* Indigo line */
+            border-radius: 2px;
+            transition: background-color 0.3s ease;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn-primary {
+            background-color: #4f46e5; /* indigo-600 */
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem; /* rounded-lg */
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #4338ca; /* indigo-700 */
+        }
+        .text-link {
+            color: #4f46e5; /* indigo-600 */
+            transition: color 0.3s ease;
+        }
+        .text-link:hover {
+            color: #4338ca; /* indigo-700 */
+        }
+        .lang-button {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            background-color: #e0e7ff; /* light indigo */
+            color: #4f46e5;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .lang-button.active, .lang-button:hover {
+            background-color: #4f46e5;
+            color: #ffffff;
+        }
+        .theme-toggle {
+            background-color: #e0e7ff; /* light indigo */
+            color: #4f46e5;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px; /* full rounded */
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        }
+        .theme-toggle:hover {
+            background-color: #c7d2fe; /* darker light indigo */
+        }
+        .theme-toggle svg {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        /* Dark Mode styles */
+        html.dark body {
+            background-color: #1a202c; /* Dark background */
+            color: #e2e8f0; /* Light text */
+        }
+        html.dark .section-title {
+            color: #f7fafc; /* Lighter text for titles */
+        }
+        html.dark .section-title::after {
+            background-color: #a78bfa; /* Lighter indigo for line */
+        }
+        html.dark .card {
+            background-color: #2d3748; /* Darker card background */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.12);
+        }
+        /* NEW: Header background in dark mode */
+        html.dark header {
+            background-color: #2d3748; /* Make header background dark in dark mode */
+        }
+        html.dark .text-gray-900 {
+            color: #f7fafc;
+        }
+        html.dark .text-gray-700 {
+            color: #cbd5e0;
+        }
+        html.dark .text-gray-600 {
+            color: #a0aec0;
+        }
+        html.dark .text-gray-500 {
+            color: #718096;
+        }
+        html.dark .bg-gray-50 {
+            background-color: #4a5568; /* Darker background for project cards */
+        }
+        html.dark .bg-gray-200 {
+            background-color: #4a5568; /* Darker background for photo placeholder */
+        }
+        html.dark .btn-primary {
+            background-color: #a78bfa; /* Lighter indigo for buttons */
+            color: #1a202c;
+        }
+        html.dark .btn-primary:hover {
+            background-color: #8b5cf6; /* Even lighter indigo */
+        }
+        html.dark .text-indigo-600 {
+            color: #a78bfa; /* Lighter indigo for links/highlights */
+        }
+        html.dark .hover:text-indigo-600:hover {
+            color: #8b5cf6; /* Even lighter indigo on hover */
+        }
+        html.dark .bg-indigo-100 {
+            background-color: #6d28d9; /* Darker background for skill tags */
+        }
+        html.dark .text-indigo-800 {
+            color: #ede9fe; /* Lighter text for skill tags */
+        }
+        html.dark .lang-button {
+            background-color: #4a5568;
+            color: #a78bfa;
+        }
+        html.dark .lang-button.active, html.dark .lang-button:hover {
+            background-color: #a78bfa;
+            color: #1a202c;
+        }
+        html.dark .theme-toggle {
+            background-color: #4a5568;
+            color: #a78bfa;
+        }
+        html.dark .theme-toggle:hover {
+            background-color: #2d3748;
+        }
+
+        /* Specific styles for header title in dark mode */
+        html.dark header h1 {
+            color: #ffffff; /* Make the main title (the "de Milver Camilo Rojas" part) pure white */
+        }
+
+        html.dark header h1 .text-indigo-600 {
+            color: #c4b5fd; /* A slightly brighter purple for 'Portafolio' to stand out */
+        }
