@@ -11,7 +11,7 @@
 <body class="antialiased">
     <div class="container mx-auto p-4 sm:p-6 lg:p-8">
         <header class="flex flex-col sm:flex-row justify-between items-center py-6 px-4 mb-8 bg-white rounded-xl shadow-md transition-colors duration-300">
-            <h1 class="text-x1 sm:text-3xl md:text-1xl font-bold text-gray-900 mb-4 sm:mb-0">
+            <h1 class="text-2x1 sm:text-2xl md:text-1xl font-bold text-gray-900 mb-4 sm:mb-0">
                 <span class="text-indigo-600" data-lang-key="portfolio_of_prefix">Portafolio
             </h1>
             <div class="flex items-center space-x-4 mt-4 sm:mt-0">
@@ -28,14 +28,37 @@
                     </svg>
                 </button>
             </div>
-            <nav class="mt-4 sm:mt-0">
-                <ul class="flex space-x-6">
-                    <li><a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300" data-lang-key="about_me">Sobre Mí</a></li>
-                    <li><a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300" data-lang-key="projects">Proyectos</a></li>
-                    <li><a href="#skills" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300" data-lang-key="skills">Habilidades</a></li>
-                    <li><a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300" data-lang-key="contact">Contacto</a></li>
-                </ul>
-            </nav>
+            <!-- Botón para abrir el menú (inicialmente oculto por JS) -->
+<button id="menu-toggle" class="hidden text-gray-700 hover:text-indigo-600 focus:outline-none">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+    </svg>
+</button>
+
+<!-- El overlay del menú -->
+<div id="overlay-menu" class="overlay">
+    <!-- Botón para cerrar el menú -->
+    <button id="close-menu" class="close-button">&times;</button>
+
+    <nav class="overlay-content">
+        <ul class="flex flex-col items-center justify-center gap-6"> <!-- Cambiado a flex-col para el menú vertical -->
+            <li><a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 text-2xl" data-lang-key="about_me">Sobre Mí</a></li>
+            <li><a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 text-2xl" data-lang-key="projects">Proyectos</a></li>
+            <li><a href="#skills" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 text-2xl" data-lang-key="skills">Habilidades</a></li>
+            <li><a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 text-2xl" data-lang-key="contact">Contacto</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Tu navegación original (será controlada por JS) -->
+<nav id="main-nav" class="mt-4 sm:mt-0">
+    <ul class="flex flex-wrap items-center justify-center gap-4">
+        <li><a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300" data-lang-key="about_me">Sobre Mí</a></li>
+        <li><a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300" data-lang-key="projects">Proyectos</a></li>
+        <li><a href="#skills" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300" data-lang-key="skills">Habilidades</a></li>
+        <li><a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300" data-lang-key="contact">Contacto</a></li>
+    </ul>
+</nav>
         </header>
 
         <section id="about" class="card">
@@ -428,6 +451,60 @@
 
         langEsBtn.addEventListener('click', () => updateContent('es'));
         langEnBtn.addEventListener('click', () => updateContent('en'));
+
+        document.addEventListener('DOMContentLoaded', () => {
+    const overlayMenu = document.getElementById('overlay-menu');
+    const menuToggle = document.getElementById('menu-toggle');
+    const closeMenu = document.getElementById('close-menu');
+    const mainNav = document.getElementById('main-nav');
+    const overlayLinks = document.querySelectorAll('#overlay-menu .overlay-content a');
+
+    // Función para abrir el menú overlay
+    function openOverlay() {
+        overlayMenu.style.width = '100%';
+        // Opcional: deshabilitar el scroll del cuerpo cuando el overlay está abierto
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Función para cerrar el menú overlay
+    function closeOverlay() {
+        overlayMenu.style.width = '0%';
+        // Opcional: restaurar el scroll del cuerpo
+        document.body.style.overflow = '';
+    }
+
+    // Función para manejar la visibilidad de los menús
+    function handleMenuVisibility() {
+        const windowWidth = window.innerWidth;
+
+        // Rango para mostrar el menú overlay y ocultar la navegación principal
+        if (windowWidth >= 640 && windowWidth <= 1100) {
+            menuToggle.classList.remove('hidden'); // Mostrar el botón de hamburguesa
+            mainNav.classList.add('hidden');       // Ocultar la navegación principal
+        } else {
+            menuToggle.classList.add('hidden');    // Ocultar el botón de hamburguesa
+            mainNav.classList.remove('hidden');    // Mostrar la navegación principal
+            closeOverlay();                        // Asegurarse de que el overlay esté cerrado si salimos del rango
+        }
+    }
+
+    // Event listeners
+    if (menuToggle) {
+        menuToggle.addEventListener('click', openOverlay);
+    }
+    if (closeMenu) {
+        closeMenu.addEventListener('click', closeOverlay);
+    }
+
+    // Cerrar el overlay cuando se hace clic en un enlace (para navegar a la sección)
+    overlayLinks.forEach(link => {
+        link.addEventListener('click', closeOverlay);
+    });
+
+    // Ejecutar la función de visibilidad al cargar la página y al redimensionar
+    handleMenuVisibility();
+    window.addEventListener('resize', handleMenuVisibility);
+});
     </script>
 </body>
 </html>

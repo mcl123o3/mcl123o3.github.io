@@ -54,6 +54,7 @@
             color: #4338ca;
         }
         .lang-button {
+            margin-left: 10px;
             padding: 0.5rem 1rem;
             border-radius: 0.5rem;
             background-color: #e0e7ff;
@@ -77,6 +78,7 @@
             justify-content: center;
             transition: background-color 0.3s ease, color 0.3s ease;
             box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            margin-right: 10px !important;
         }
         .theme-toggle:hover {
             background-color: #c7d2fe;
@@ -188,4 +190,59 @@
             margin-right: auto;
             text-align: left;
         }
-        
+        /* Estilos generales para el overlay */
+.overlay {
+    height: 100%;
+    width: 0; /* Inicialmente oculto */
+    position: fixed;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0); /* Fondo oscuro */
+    background-color: rgba(0,0,0, 0.9); /* Fondo oscuro con transparencia */
+    overflow-x: hidden; /* Deshabilita el scroll horizontal */
+    transition: 0.5s; /* Transición suave para la apertura/cierre */
+    display: flex; /* Para centrar el contenido */
+    align-items: center; /* Para centrar el contenido verticalmente */
+    justify-content: center; /* Para centrar el contenido horizontalmente */
+}
+
+/* Estilos para el contenido del overlay (los enlaces de navegación) */
+.overlay-content {
+    position: relative;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Estilos para los enlaces dentro del overlay */
+.overlay-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Para que cada enlace ocupe su propia línea */
+    transition: 0.3s;
+}
+
+.overlay-content a:hover, .overlay-content a:focus {
+    color: #f1f1f1;
+}
+
+/* Posición del botón de cierre */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #f1f1f1;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.close-button:hover {
+    color: #ccc;
+}
